@@ -39,8 +39,9 @@ Airplane.prototype.land = function () {
         + It should return a string with `name` and `age`. Example: "Mary, 50"
 */
 
-function Person() {
-  
+function Person(name, age) {
+  const stomach = [];
+
 }
 
 
@@ -63,7 +64,7 @@ function Person() {
         + The `drive` method should return a string "I ran out of fuel at x miles!" x being `odometer`.
 */
 
-function Car() {
+function Car(model, milesPerGallon) {
   
 }
 
@@ -75,7 +76,7 @@ function Car() {
     - Besides the methods on Person.prototype, babies have the ability to `.play()`:
         + Should return a string "Playing with x", x being the favorite toy.
 */
-function Baby() {
+function Baby(name, age) {
  
 }
 
@@ -83,11 +84,11 @@ function Baby() {
 /* 
   TASK 4
   In your own words explain the four principles for the "this" keyword below:
-  1. 
-  2. 
-  3. 
-  4. 
-*/
+  1. Window/global object binding: The 'this' value is the window/console object in this instance.
+  2. Implicit Binding: The 'this' value is whatever is to the left of the dot.
+  3. New Binding: If you use a constructor function, the 'this' value will refer to the instance of the object created and it will be returned by the constructor function.
+  4. Explicit Binding: When you use the .call or .apply method, the 'this' value is defined explicitly.
+  */
 
 
 ///////// END OF CHALLENGE /////////
